@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+ }
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Definições</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://maps.app.goo.gl/LrnRSAGCTmWehTiz9" target="_blank">Londres</a></li>
+      <li><a href="https://maps.app.goo.gl/6jYSim3yd5GjenZS9" target="_blank">Paris</a></li>
+      <li><a href="https://maps.app.goo.gl/z4PBtaTADLkoSEPv8" target="_blank">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Cidade</h1>
+    <p>Uma cidade é uma área urbanizada, que se diferencia de vilas e outros espaços urbanos através de vários critérios: população, infraestrutura, organização, serviços, entre outros.
+</p>
+    <p>Uma cidade caracteriza-se por um estilo de vida particular dos seus habitantes, pela urbanização (infraestrutura, organização, serviços de transporte etc), pela concentração de atividades econômicas dos setores secundário, terciário etc. As atividades primárias (agricultura, pecuária) são desenvolvidas na zona rural.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
